@@ -16,6 +16,8 @@ html {
 #header {
     height: 46.5px;
     background-color: #000;
+    /* Phần bóng đổ cho header */
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 #nav {
@@ -69,26 +71,31 @@ là con của thể li đó */
 
 #nav .subnav {
     /* Ẩn subnav */
-    /* display: none; */
+    display: none;
     position: absolute;
     background-color: #fff;
-    color:#000;
+    /* Phần bóng đổ cho subnav */
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);;
 
+} 
+
+#nav li:hover .subnav {
+    display: block;
 }
 
 #nav .subnav li {
-    padding: 8px 16px;
     min-width: 160px;
-    
 }
 
 #nav .subnav li a {
-
+    color:#000;
+    display: block;
+    line-height: 38.5px;
+    padding: 0 16px;
 }
 
 #slider {
-    min-height: 500px;
-    background-color: #ccc;
+
 }
 
 #content {
