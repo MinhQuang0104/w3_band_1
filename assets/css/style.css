@@ -4,3 +4,97 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-family: sans-serif;
+}
+
+#main {
+
+}
+
+#header {
+    height: 46.5px;
+    background-color: #000;
+}
+
+#nav {
+
+}
+
+#nav, .subnav {
+    /*Bỏ dấu chấm của list item */
+    list-style-type: none;
+}
+
+/* #nav  li ?  */
+#nav  li { 
+    /* Dùng để kéo ul#nav về 1 hàng ???? bị chuyển xuống dưới */
+    
+    /* position: relative; */
+}
+/* Vì sao lại phải Selector cho thẻ con trực tiếp ??? */
+/* Giải thích: Vì khi không dùng > thì các subnav cũng bị ảnh hưởng, làm cho
+giao diện bị sai */
+#nav > li { 
+    /* Dùng để kéo ul#nav về 1 hàng */
+    display: inline-block;
+    position: relative;
+}
+/* thêm thuộc tính hover (khi di chuột vào thẻ li cho cả nav và subnav */
+/* Khi di chuột vào thẻ li (li:hover) là con của #nav thì CSS vào các thẻ a
+là con của thể li đó */
+#nav > li:hover > a, 
+#nav .subnav li:hover a {
+    background-color: #ccc;
+    color: #000;
+}
+/* CSS cho thẻ a có thẻ cha là li, và cha của li là #nav */
+#nav  li  a {
+    font-size: 15px;
+    /* Bỏ gạch chân */
+    text-decoration: none;    
+    
+}
+
+#nav > li > a {
+    color: white;
+    line-height: 46.5px;
+    padding: 0 24px;
+    text-transform: uppercase;
+    display:inline-block;
+}
+
+
+
+#nav .subnav {
+    /* Ẩn subnav */
+    /* display: none; */
+    position: absolute;
+    background-color: #fff;
+    color:#000;
+
+}
+
+#nav .subnav li {
+    padding: 8px 16px;
+    min-width: 160px;
+    
+}
+
+#nav .subnav li a {
+
+}
+
+#slider {
+    min-height: 500px;
+    background-color: #ccc;
+}
+
+#content {
+
+}
+
+#footer {
+
+}
