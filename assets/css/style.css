@@ -14,6 +14,10 @@ html {
 }
 
 #header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     height: 46.5px;
     background-color: #000;
     /* Phần bóng đổ cho header */
