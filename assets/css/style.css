@@ -21,7 +21,9 @@ html {
 }
 
 #nav {
-
+    /* Để khối bọc quanh navigation chỉ bao quanh nội dung của nó chứ không
+    chiếm hết cả thanh header, nhắm chèm thêm btn-search vào góc bên phải */
+    display: inline-block;
 }
 
 #nav, .subnav {
@@ -67,8 +69,6 @@ là con của thể li đó */
     display:inline-block;
 }
 
-
-
 #nav .subnav {
     /* Ẩn subnav */
     display: none;
@@ -92,6 +92,24 @@ là con của thể li đó */
     display: block;
     line-height: 38.5px;
     padding: 0 16px;
+}
+
+#nav .arrow-down {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+#header .search-btn {
+    float: right;
+    color: #fff;
+    padding: 0 24px;
+    line-height: 46.5px;
+    font-size: 14px;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+
 }
 
 #slider {
