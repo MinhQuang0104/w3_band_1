@@ -219,7 +219,7 @@ là con của thể li đó */
 }
 
 #content .tour-section .tour-time {
-    padding: 8px 16px;
+    padding: 10px 16px;
     border-bottom: 1px solid #ddd;
     color: #757575;
     font-size: 15px;
@@ -262,6 +262,10 @@ là con của thể li đó */
     display: block;
 }
 
+.place-img:hover {
+    opacity: 0.6;
+}
+
 .place-body {
     background-color: #fff;
     padding: 15px 16px 16px;
@@ -281,6 +285,11 @@ là con của thể li đó */
 .place-text {
     margin-top: 15px;
     line-height: 1.4;
+}
+
+.place-button:hover {
+    background-color: #ccc;
+    color: #000;
 }
 
 .place-button {
